@@ -27,14 +27,17 @@ public class Main {
 				
 		// change gui mode to DARK or LIGHT
 		gui.setMode(Gui.DARK);
+		showGui(gui);
+		startLoop(world, gui);
 
 		while (Gameplay.LEVEL_NUMBER <= Levels.levels.length) {
 		
 			final Level level = Levels.levels[Gameplay.LEVEL_NUMBER - 1];
 			level.load(world, player);
+			gui.repaint();
 	
-			showGui(gui);
-			startLoop(world, gui);
+			//showGui(gui);
+			//startLoop(world, gui);
 			level.runPlayerCommands(player);
 			
 			if ((player.getWorld() == null && !player.isFinished) || !player.isFinished)
