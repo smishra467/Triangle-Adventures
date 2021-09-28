@@ -57,6 +57,6 @@ See Google Docs below for instructions and level descriptions
 ![Level 16](./levels/Level16.png)
 
 ## Necessary Attributions
-Originally created by @simonsdeng
+Originally created by [@simonsdeng]
 
-Redesign by @Nathaniel-github
+Redesign by [@Nathaniel-github](https://github.com/Nathaniel-github)
