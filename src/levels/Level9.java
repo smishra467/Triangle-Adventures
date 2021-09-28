@@ -25,7 +25,7 @@ public class Level9 implements Level {
 		world.add(new Enemy(), 0, 4);
 		world.add(new Enemy(), 1, 4);
 		world.add(new Enemy(), 1, 5);
-		world.add(new Door(), 0, 5);
+		world.add(new Gate(), 0, 5);
 	}
 
 	@Override

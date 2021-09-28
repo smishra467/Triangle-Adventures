@@ -10,7 +10,7 @@ public class Level3 implements Level {
 		world.add(new Enemy(), 1, 2);
 		world.add(new Lava(), 0, 1);
 		world.add(new Lava(), 0, 3);
-		world.add(new Door(), 0, 2);
+		world.add(new Gate(), 0, 2);
 	}
 
 	@Override

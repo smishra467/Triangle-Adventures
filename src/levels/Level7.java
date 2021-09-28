@@ -10,7 +10,7 @@ public class Level7 implements Level {
 	public void load(World world, Player player) {
 		world.add(player, 3, 3);
 		world.add(new Enemy(), (CODE == 1) ? 4 : 2, 3);
-		world.add(new Door(), (CODE == 1) ? 5 : 1, 3);
+		world.add(new Gate(), (CODE == 1) ? 5 : 1, 3);
 		for (int i = 0; i < 5; i ++) {
 			
 			world.add(new Wall(), 1 + i, 2);

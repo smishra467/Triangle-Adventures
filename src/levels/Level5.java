@@ -7,7 +7,7 @@ public class Level5 implements Level {
 	@Override
 	public void load(World world, Player player) {
 		world.add(player, 0, 3);
-		world.add(new Door(), 2, 3);
+		world.add(new Gate(), 2, 3);
 		world.add(new Wall(), 1, 3);
 		world.add(new Wall(), 2, 2);
 		world.add(new Wall(), 2, 4);

@@ -10,7 +10,7 @@ public class Level8 implements Level {
 	public void load(World world, Player player) {
 		world.add(player, 2, 3);
 		world.add(new Enemy(), 3 + DISTANCE, 3);
-		world.add(new Door(), 3 + DISTANCE, 2);
+		world.add(new Gate(), 3 + DISTANCE, 2);
 		for (int i = 0; i < 6; i ++) {
 			world.add(new Wall(), 2 + i, 1);
 			world.add(new Wall(), 2 + i, 4);
