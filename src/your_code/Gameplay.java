@@ -18,32 +18,89 @@ public class Gameplay {
 		player.move();
 		player.attack();
 		player.move();
-		//player.move();
+		player.move();
 	}
 
 	// Player commands for Level 2
 	public static void solveLevel2(Player player) {
-		
+		for (int i = 0; i < 5; i++) {
+			player.move();
+		}
+		player.turnRight();
+		player.move();
+		player.attack();
+		player.move();
+		player.turnLeft();
+		player.move();
 	}
 
 	// Player commands for Level 3
 	public static void solveLevel3(Player player) {
-		
+		player.turnLeft();
+		player.turnLeft();
+		player.move();
+		player.attack();
+		player.move();
+		player.move();
 	}
 
 	// Player commands for Level 4
 	public static void solveLevel4(Player player) {
-		
+		player.move();
+		player.turnLeft();
+		player.move();
+		player.turnRight();
+		player.move();
+		player.move();
+		player.move();
+		player.turnRight();
+		player.attack();
+		player.move();
+		player.turnLeft();
+		player.move();
 	}
 
 	// Player commands for Level 5
 	public static void solveLevel5(Player player) {
-		
+		player.turnLeft();
+		player.move();
+		player.move();
+		player.turnRight();
+		for (int i = 0; i < 4; i++) {
+			player.move();
+		}
+		player.turnRight();
+		player.move();
+		player.move();
+		player.turnRight();
+		player.attack();
+		player.move();
+		player.move();
 	}
 
 	// Player commands for Level 6
 	public static void solveLevel6(Player player) {
-		
+		for (int i = 0; i < 6; i++) {
+			player.move();
+		}
+		player.turnRight();
+		for (int i = 0; i < 4; i++) {
+			player.move();
+		}
+		player.turnRight();
+		for (int i = 0; i < 7; i++) {
+			player.move();
+		}
+		player.turnRight();
+		player.move();
+		player.move();
+		player.turnRight();
+		for (int i = 0; i < 3; i++) {
+			player.move();
+		}
+		player.attack();
+		player.move();
+		player.move();
 	}
 
 	// Player commands for Level 7
@@ -51,11 +108,28 @@ public class Gameplay {
 		/*
 		 * Make sure to read the documentation before solving the ones past here
 		 */
+		if (levels.Level7.CODE == 2) {
+			player.turnLeft();
+			player.turnLeft();
+			player.attack();
+			player.move();
+			player.move();
+		} else {
+			player.attack();
+			player.move();
+			player.move();
+		}
 	}
 
 	// Player commands for Level 8
 	public static void solveLevel8(Player player) {
-//		player.move();
+		for (int i = 0; i < levels.Level8.DISTANCE; i++) {
+			player.move();
+		}
+		player.attack();
+		player.move();
+		player.turnLeft();
+		player.move();
 	}
 
 	// Player commands for Level 9
