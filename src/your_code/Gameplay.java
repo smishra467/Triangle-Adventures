@@ -5,12 +5,12 @@ import elements.Player;
 public class Gameplay {
 
 	// Change the level by changing the number below
-	public static int LEVEL_NUMBER = 1;
+	public static int LEVEL_NUMBER = 16;
 	
 	// Player commands for Level 1
 	public static void solveLevel1(Player player) {
 		/*
-		 * Hint: read the documentation
+		 * Hint: read the documentation (https://docs.google.com/document/d/1FG13jInI48Gbv16kzwx2JGhG4sP78v1Z6rV9RUhsU0g/edit?usp=sharing)
 		 */
 	}
 
