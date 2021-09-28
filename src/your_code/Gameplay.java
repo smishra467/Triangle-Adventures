@@ -12,12 +12,13 @@ public class Gameplay {
 	public static void solveLevel1(Player player) {
 		/*
 		 * Hint: read the documentation (https://docs.google.com/document/d/1FG13jInI48Gbv16kzwx2JGhG4sP78v1Z6rV9RUhsU0g/edit?usp=sharing)
+		 * Second Hint: uncomment the last line for this level
 		 */
 		player.move();
 		player.move();
 		player.attack();
 		player.move();
-		player.move();
+		//player.move();
 	}
 
 	// Player commands for Level 2
