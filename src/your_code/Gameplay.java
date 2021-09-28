@@ -1,17 +1,23 @@
 package your_code;
 
 import elements.Player;
+import levels.Levels;
 
 public class Gameplay {
 
 	// Change the level by changing the number below
-	public static int LEVEL_NUMBER = 16;
+	public static int LEVEL_NUMBER = Levels.getCurrentLevel();
 	
 	// Player commands for Level 1
 	public static void solveLevel1(Player player) {
 		/*
 		 * Hint: read the documentation (https://docs.google.com/document/d/1FG13jInI48Gbv16kzwx2JGhG4sP78v1Z6rV9RUhsU0g/edit?usp=sharing)
 		 */
+		player.move();
+		player.move();
+		player.attack();
+		player.move();
+		player.move();
 	}
 
 	// Player commands for Level 2

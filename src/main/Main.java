@@ -1,4 +1,9 @@
 package main;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.swing.JFrame;
 
 import elements.Gui;
@@ -36,6 +41,15 @@ public class Main {
 				break;
 			
 			player = new Player();
+			PrintWriter pw = null;
+			try {
+				pw = new PrintWriter(new FileWriter(new File("assets/LevelSave.txt"), true));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			pw.println(Gameplay.LEVEL_NUMBER);
+			pw.close();
 			Gameplay.LEVEL_NUMBER++;
 			world.clear();
 		

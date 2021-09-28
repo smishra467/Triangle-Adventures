@@ -1,4 +1,9 @@
 package levels;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Levels {
 	
 	public static final Level[] levels = new Level[] {
@@ -19,5 +24,27 @@ public class Levels {
 		new Level15(),
 		new Level16()
 	};
+	
+	public static int getCurrentLevel() {
+		
+		Scanner sc = null;
+		
+		try {
+			sc = new Scanner(new File("assets/LevelSave.txt"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		String line = null;
+		
+		while (sc.hasNextLine()) {
+			
+			line = sc.nextLine();
+			
+		}
+		
+		return Integer.parseInt(line) + 1;
+		
+	}
 
 }
